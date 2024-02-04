@@ -4,6 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Tableau2D {
+    /**
+     * Calcule le nombre de feuilles restantes sur un arbre après le passage de coups de vent.
+     *
+     * @param width   La largeur du tableau d'arbres.
+     * @param height  La hauteur du tableau d'arbres.
+     * @param leaves  Le tableau représentant l'arbre avec des feuilles.
+     * @param winds   La série de coups de vents sous forme de chaîne de caractères.
+     * @return Le nombre de feuilles restantes sur l'arbre.
+     */
     public static int remainingLeaves(int width, int height, int[][] leaves, String winds) {
         // Vérifier les cas où leaves est vide
         if (leaves == null || leaves.length == 0) {
