@@ -10,19 +10,18 @@ public class Test1Application {
 
 	public static void main(String[] args) {
 
-		//SpringApplication.run(Test1Application.class, args);
 		int width = 5;
 		int height = 5;
 		int [][] leaves = {
-				{0, 0, 0, 0, 1},
-				{0, 0, 0, 0, 1},
-				{0, 0, 0, 0, 0},
-				{0, 0, 1, 3, 0},
-				{0, 0, 0, 2, 0}
+			{0, 0, 0, 0, 1},
+			{0, 0, 0, 0, 1},
+			{0, 0, 0, 0, 0},
+			{0, 0, 1, 3, 0},
+			{0, 0, 0, 2, 0}
 		};
 		String winds = "ULLL";
 		int result = remainingLeaves(width, height, leaves, winds);
-
+	
 		System.out.println(result);
 	}
 
